@@ -1,0 +1,1053 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+.container{
+  max-width:1400px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a{
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  color:black;
+}
+
+body{
+  font-family: "Poppins", sans-serif;
+}
+
+.nav-is-open{
+  left: 0;
+}
+
+
+.navbar{
+  padding:20px 0;
+
+  .header-flex{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+      .menu-holder{
+        display: flex;
+        gap:20px;
+    
+        .menu-items{
+          display: flex;
+          list-style: none;
+          gap:40px;
+          text-transform: uppercase;
+        }
+      }
+
+      .burger{
+        display:none;
+        font-size: 30px;
+      }
+
+      .close-nav{
+        display:none;
+        font-size: 30px;
+      }
+  }
+}
+
+
+// popup box
+body.popup-is-active{
+	overflow-y: hidden; 
+}
+
+body.popup-is-active .popup-big-box{
+	display: block;
+}
+
+.popup-big-box{
+	background: rgba(73, 73, 73, 0.9);
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+  z-index:100; 
+	top: 0;
+	left: 0;
+	display: none;
+
+  .popup-content{
+    background: white;
+    padding: 40px 10px;
+    width: 800px;;
+    max-width: 800px;
+    max-height: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow-y: scroll;
+
+      h3 {
+        margin-bottom: 30px ;
+    }
+
+    #close-btn{
+      background: red;
+      border:2px solid red;
+      padding:10px;
+      color: white;
+      position: absolute;
+      top: 18px;
+      right: 18px;
+      cursor: pointer;
+    }
+    
+    iframe {
+      width:100%;
+      height: 500px;
+    }
+  }
+}
+
+
+.hero{
+  padding:300px 0;
+  background: url(assests/bg.jpg) rgba(0,0,0, 0.6);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+
+  .content{
+    text-align: center;
+    color:#fff;
+    margin-left: auto;
+    margin-right: auto;
+
+    .small-title{
+      font-size: 10px;
+      letter-spacing:2px;
+      text-transform: uppercase;
+      font-weight: 100;
+
+      &:hover {
+         color:red;
+         scale: 1.2;
+      }
+    }
+  
+    .line{
+      border-bottom: 1px solid red;
+      margin:15px 0;
+      width:260px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .big-title{
+      font-size: 38px;
+      font-weight: 800;
+      text-transform: capitalize;
+    }
+  
+    .hero-btn{
+      font-size: 17px;
+      padding:8px 18px;
+      text-transform: capitalize;
+      background-color: red;
+      border:2px solid transparent;
+      color:#fff;
+      margin-top: 20px;
+  
+      &:hover{
+        border:2px solid red;
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+
+.intro{
+  padding:80px 0;
+
+  .intro-flex{
+    display: flex;
+    gap:60px;
+
+    .intro-text{
+      width: 50%;
+
+
+      .intro-small-title{
+        font-size: 15px;
+        color:red;
+        font-weight: 100;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        animation-name: intro-small-title;
+        animation-duration:2s;
+      
+        @keyframes intro-small-title  {
+          0% {
+            transform: translateY(0);
+          }
+          50% {
+            transform: translateX(-60px);
+          }
+          100% {
+            transform: translateY(0);
+          }
+        }
+      }
+  
+      .intro-big-title {
+        font-size: 35px;
+        margin: 20px 0;
+        font-weight: 700;
+        position: relative; 
+    
+        &:hover {
+          &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            width: 0;
+            height: 2px;
+            background-color: black;
+            animation: underline-animation 1s forwards;
+          }
+        }
+
+        @keyframes underline-animation {
+          from {
+            width: 0;
+          }
+          to {
+            width: 100%;
+          }
+        }
+      }
+  
+      .intro-sub-title{
+        font-size: 30px;
+        font-weight: 700;
+      }
+  
+      p{
+        font-size: 18px;
+        color:gray;
+        margin-top:20px;
+        margin-bottom:55px;
+      }
+
+      a{
+        text-transform: capitalize;
+      }
+
+      .btn-start{
+        font-size: 17px;
+        padding:10px 25px;
+        background-color: black;
+        border:2px solid transparent;
+        color:white;
+  
+        animation: button 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+          
+          &:hover {
+            background-color: transparent;
+            border:2px solid black ;
+            color:black;
+            box-shadow: 0 5px 12px black;
+          }
+        }
+      }
+
+    .intro-img{
+      width: 50%;
+      height: 430px;
+      background:url(https://cdn-static.wework.com/content/images/home/enterprise-grade-solutions_800x520.webp);
+      background-position: center;
+      background-size: cover;
+    }
+  }
+}
+
+
+.serveice{
+  padding:120px 0;
+  background: url(assests/service.jpg) rgba(0,0,0, 0.85);
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+  
+  .serveice-card-parent{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+    row-gap: 4rem;
+
+    .serveice-card{
+      padding:10px;
+      transition: 1s;
+
+      .card-title{
+        margin-bottom:22px;
+        font-size: 22px;
+        font-weight:800;
+        color:#fff;
+      }
+    
+      .card-dscription{
+        line-height:  25px;
+        color:#8c8989;
+
+        &:hover{
+          color:black;
+        }
+      }
+    
+      &:hover{
+        animation: hoverEffect 0.5s forwards;
+        background-color:rgba(249, 246, 246,0.6);
+
+        .card-title{
+          color:black;
+        }
+    
+        .card-dscription{
+          color:black;
+        }
+
+      }
+
+      @keyframes hoverEffect {
+        from {
+          opacity: 0;
+          transform: scale(1);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
+
+
+.blog{
+  padding:80px 0;
+
+  .interval{
+    padding-bottom: 50px;
+    text-align: center;
+
+    .interval-title{
+      font-size: 35px;
+      animation: spacing 2s linear;
+
+        @keyframes spacing {
+          0% {
+            letter-spacing: normal;
+          }
+          50% {
+            letter-spacing: 5px;
+          }
+          100% {
+            letter-spacing: normal;
+          }
+        }
+      }
+
+      .interval-subtitle{
+        font-size: 15px;
+        font-weight: 100;
+        margin: 20px 0;
+      }
+    }
+
+  .blog-card-hoder{
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    gap:20px;
+
+    .blog-card{
+      width: 50%;
+      border:0px solid red;
+
+      .blog-img-1 {
+        height:230px;
+        background: url(https://ctfassets.imgix.net/vh7r69kgcki3/6cBBTXTBLLJmb8mjB6syls/31f61b87ab767d21e031769862496023/private-office_600.webp) rgba(0,0,0, 0.8);
+        background-position: center;
+        background-size: cover;
+      }
+
+      .blog-img-2{
+        height:230px;
+        background:url(https://ctfassets.imgix.net/vh7r69kgcki3/6BHjvaBr98Fqxmqd2bjkmn/67533a68880903bf59cdb457ef974840/all-access_600.webp);
+        background-position: center;
+        background-size: cover;
+      }
+
+      .texts{
+        border:0px solid red;
+ 
+        .tags{
+           margin:15px 0;
+ 
+           button{
+             background-color: red;
+             padding:3px 12px;
+             border: 0;
+             color:#fff;
+           }
+         }
+ 
+        h2{
+          font-size: 18px;
+          font-weight: 600;
+          margin: 20px 0;
+          position: relative;
+
+          &:hover {
+            &::after {
+              content: '';
+              position: absolute;
+              left: 0;
+              bottom: -3px;
+              width: 0;
+              height: 2px;
+              background-color: black;
+              animation: underline-animation 1s forwards;
+            }
+          }
+  
+          @keyframes underline-animation {
+            from {
+              width: 0;
+            }
+            to {
+              width: 100%;
+            }
+          }
+        }
+      
+        .discription{
+          font-size: 15px;
+          line-height: 25px;
+          margin-bottom: 15px ;
+          position: relative;
+
+          &:hover {
+            &::after {
+              content: '';
+              position: absolute;
+              left: 0;
+              bottom: -3px;
+              width: 0;
+              height: 2px;
+              background-color: black;
+              animation: underline-animation 1s forwards;
+            }
+          }
+  
+          @keyframes underline-animation {
+            from {
+              width: 0;
+            }
+            to {
+              width: 100%;
+            }
+          }
+
+          .date{
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.slider-item {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+.slider-1 {
+  background-image: url(https://cdn-static.wework.com/content/images/home/contact-us-816x1200.webp);
+}
+
+.slider-2 {
+  background-image: url(https://ctfassets.imgix.net/vh7r69kgcki3/1o13B9ZhDTym7k4uxEKMIZ/c28687d37f1424cdea7ff3c68137e904/Web_72DPI-VIR_TYS_OFFICE__1_.jpg?auto=format%20compress&fit=crop&q=50&w=750&h=422);
+}
+
+.slider-3 {
+  background-image: url(https://www.wework.com/ideas/wp-content/uploads/sites/4/2022/01/wework-photo-7_v1-1536x864.jpg);
+}
+
+.slider-4 {
+  background-image: url(https://www.wework.com/ideas/wp-content/uploads/sites/4/2023/10/Web_72DPI-20230503-Moor-Place-London-36-1020x630.jpg);
+}
+
+.slider-5 {
+  background-image: url(https://www.wework.com/ideas/wp-content/uploads/sites/4/2023/12/Web_150DPI-20200313_WeWork_Salesforce-Tower-Atrium-San-Francisco_015-1-1440x810.jpg);
+}
+
+.slider-6 {
+  background-image: url(https://www.wework.com/ideas/wp-content/uploads/sites/4/2023/12/Web_150DPI-20221305_75-East-Santa-Clara-Street_17-1440x810.jpg);
+}
+
+.slider-7 {
+  background-image: url(https://www.wework.com/ideas/wp-content/uploads/sites/4/2022/09/Workspace-Design-WeWork-167-North-Green-Reshoot-2-scaled.jpg);
+}
+
+
+.pricing-text{
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  h2{
+    font-size: 45px;
+  }
+}
+
+
+.faq{
+  padding-bottom:80px;
+
+  .title{
+    font-size: 35px;
+    margin:35px 0;
+  }
+
+  .question{
+    padding:10px 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    text-transform: capitalize;
+  
+    .is-open{
+      background-color: #fff;
+    }
+  }
+
+  .toggle-mark{
+    font-size: 35px;
+  }
+
+  .answer{
+    font-size: 18px;
+    display: none;
+    padding:20px 0;
+    border-bottom: 2px solid gray;
+  }
+}
+
+
+.contact{
+  color:white;
+  text-transform: capitalize;
+  border-top:2px solid red;
+  border-bottom:2px solid red;
+  padding:60px;
+  background: url(https://www.wework.com/ideas/wp-content/uploads/sites/4/2023/06/Web_72DPI-20210212_368_8th_Ave_11th_Fl_Nook-1-1120x630.jpg) rgba(0,0,0, 0.8);
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+  
+  .flex{
+    display: flex;
+    justify-content: space-between;
+
+    .left{
+      width: 20%;
+
+      .title{
+        font-size:30px ;
+      }
+    
+      .logo{
+        width: 100px;
+        height: 100px;
+        border-radius:50%;
+
+      }
+    }
+
+    .right{
+      text-transform: uppercase;
+      text-transform: capitalize;
+      width:50%;
+      font-size: 18px;
+    
+      a{
+        font-size: 22px;
+      }
+  
+      button{
+        padding:10px 30px;
+        background-color: red;
+        border-radius: 15px;
+        border:2px solid transparent;
+        color:#fff;
+        text-transform: uppercase !important;
+      margin-bottom: 50px;
+      &:hover{
+        background-color:transparent;
+    
+        border:2px solid red;
+      }
+      }
+    }
+  }
+}
+
+
+footer{
+  padding:20px 0;
+
+  .flex{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .icons{
+    display: flex;
+    gap:20px;
+  }
+}
+
+
+@media only screen and (max-width:1200px) {
+
+  .hero{
+    padding:220px 0;
+
+      .content{
+        .big-title{
+          font-size:28px;
+        }
+      }
+    }
+}
+
+.intro{
+
+  .intro-flex{
+
+    .intro-text{
+      width: 100%;
+
+      .intro-big-title{
+        font-size: 35px;
+        margin:15px 0;
+      }
+
+      .intro-sub-title{
+        font-size:15px;
+      }
+  
+      p{
+        font-size:18px;
+      }
+    }
+
+    .intro-img{
+      width: 100%;
+      height: 330px;  
+    }
+  }
+}
+
+
+@media only screen and (max-width:996px) {
+
+  .hero{
+    padding:150px 0;
+
+      .content{
+  
+        .big-title{
+          font-size: 20px;
+        }
+      }
+    }
+
+    .intro{
+      padding:50px 0;
+    
+      .intro-flex{
+        flex-direction: column;
+        gap:35px;
+    
+        .intro-text{
+          width: 100%;
+    
+          .intro-big-title{
+            font-size: 35px;
+          }
+  
+          .intro-sub-title{
+            font-size:20px;
+          }
+      
+          p{
+            margin:20px 0;
+            position: relative;
+          }
+    
+          .btn-start{
+            position: absolute;
+            right:55px;
+            
+          }
+        }
+    
+        .intro-img{
+          margin-top:35px;
+          width: 100%;
+          height: 200px;
+        }
+      }
+    }
+  
+
+    .serveice{
+      padding:40px 0;
+      
+      .serveice-card-parent{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 2rem;
+      }
+    }
+    
+
+    .blog{
+      padding:60px 0;
+
+      .interval{
+        padding-bottom: 10px;
+
+        .interval-title{
+          font-size: 35px;
+          }
+          .interval-subtitle{
+            margin: 10px 0;
+          }
+      }
+
+      .blog-card-hoder{
+
+      
+        .blog-card{
+          width:100%;
+        
+
+          .blog-img-1 {
+            height:160px;
+            margin:10px 0;
+          }
+
+          .blog-img-2{
+            height:160px;
+            margin:10px 0;
+          }
+
+          .texts{
+        
+            .tags{
+              margin:5px 0;
+            }
+    
+            h2{
+              position: relative;
+            }
+          
+            .date{
+              position: absolute;
+              right:60px;
+            }
+          }
+        }
+      }
+    }
+
+    .contact{
+      padding:30px ;
+  
+      .flex{
+        flex-direction: column;
+
+        .left{
+          display: none;
+
+          .title{
+            font-size:25px;
+          }
+        
+          .logo{
+            width: 50px;
+            height: 50px;
+          }
+        }
+    
+        .right{
+          width:100%;
+          // font-size: 18px;
+        
+          a{
+            font-size: 18px;
+          }
+      
+          button{
+            padding:8px 25px;
+            margin-bottom: 30px;
+          }
+        }
+      }
+    }
+}
+
+@media only screen and (max-width:768px) {
+ 
+.navbar{
+  position: relative;
+  .header-flex{
+      .menu-holder{
+        padding: 30px 15px;
+        background: white;
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        width: 100%;
+        display: none;
+    
+        .menu-items{
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    .burger{
+      display:block;
+      font-size: 30px;
+    }
+  }
+}
+
+  body.nav-is-open .menu-holder {
+    right: 60px;
+  }
+
+
+
+    .hero{
+      padding:100px 0;
+
+        .content{
+    
+          .big-title{
+            font-size: 20px;
+          }
+        }
+    }
+      
+
+  .serveice{
+    padding:45px 0;
+    
+    .serveice-card-parent{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 1rem;
+
+      .serveice-card{
+        padding:5px;
+        width: 90%;
+
+        &:hover{
+        margin-left: auto;
+        margin-right: auto;
+        }
+      }
+    }
+
+  }
+
+     
+.blog{
+  padding:50px 0;
+
+  .interval{
+    padding-bottom: 10px;
+
+    .interval-title{
+      font-size: 35px;
+      }
+      .interval-subtitle{
+        margin: 10px 0;
+      }
+  }
+
+  .blog-card-hoder{
+
+    flex-direction: column;
+    gap:20px;
+
+    .blog-card{
+      width:100%;
+    
+
+      .blog-img-1 {
+        height:160px;
+        margin:10px 0;
+      }
+
+      .blog-img-2{
+        height:160px;
+        margin:10px 0;
+      }
+
+      .texts{
+    
+        .tags{
+           margin:5px 0;
+         }
+ 
+        h2{
+          position: relative;
+        }
+      
+        .date{
+          position: absolute;
+          right:60px;
+        }
+      }
+    }
+  }
+
+
+  .contact{
+  
+    padding:50px ;
+  
+    .flex{
+      flex-direction: column;
+ 
+      .left{
+        width: 100%;
+  
+        .title{
+          font-size:15px;
+        }
+      
+        .logo{
+          width: 50px;
+          height: 50px;
+        }
+      }
+  
+      .right{
+        width:100%;
+
+        a{
+          font-size: 18px;
+        }
+    
+        button{
+          padding:8px 25px;
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+@media only screen and (max-width:576px) {
+  .hero{
+    padding:80px 0;
+
+      .content{
+      
+        .big-title{
+          font-size: 20px;
+
+          @keyframes spacing {
+            0% {
+              letter-spacing: normal;
+            }
+            50% {
+              letter-spacing:6px;
+            }
+            100% {
+              letter-spacing: normal;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+  .blog{
+    padding:40px 0;
+
+    .interval{
+      padding-bottom: 5px;
+    
+      .interval-title{
+        font-size: 25px;
+        }
+
+      .interval-subtitle{
+        margin:15px 0;
+      }
+    }
+
+
+  .blog-card-hoder{
+  
+    .blog-card{
+
+      .blog-img-1 {
+        height:120px;
+      }
+
+      .blog-img-2{
+        height:120px;
+      }
+
+      .texts{
+
+        .discription{
+          margin-bottom: 5px ;
+ 
+        }
+
+        .date{
+          font-size: 15px;
+          position: absolute;
+          right:60px;
+        }
+      }
+    }
+  }
+}
+}

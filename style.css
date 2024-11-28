@@ -279,7 +279,7 @@ body.popup-is-active .popup-big-box {
 .intro .intro-flex .intro-img {
   width: 50%;
   height: 430px;
-  background: url(/assests/intro.webp);
+  background: url(assests/intro.webp);
   background-position: center;
   background-size: cover;
 }

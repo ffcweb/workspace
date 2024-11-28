@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .container {
@@ -35,11 +35,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .navbar .header-flex .menu-holder {
   display: -webkit-box;
@@ -92,7 +92,7 @@ body.popup-is-active .popup-big-box {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   overflow-y: scroll;
 }
 .popup-big-box .popup-content h3 {
@@ -182,36 +182,36 @@ body.popup-is-active .popup-big-box {
   letter-spacing: 2px;
   text-transform: uppercase;
   -webkit-animation-name: intro-small-title;
-  animation-name: intro-small-title;
+          animation-name: intro-small-title;
   -webkit-animation-duration: 2s;
-  animation-duration: 2s;
+          animation-duration: 2s;
 }
 @-webkit-keyframes intro-small-title {
   0% {
     -webkit-transform: translateY(0);
-    transform: translateY(0);
+            transform: translateY(0);
   }
   50% {
     -webkit-transform: translateX(-60px);
-    transform: translateX(-60px);
+            transform: translateX(-60px);
   }
   100% {
     -webkit-transform: translateY(0);
-    transform: translateY(0);
+            transform: translateY(0);
   }
 }
 @keyframes intro-small-title {
   0% {
     -webkit-transform: translateY(0);
-    transform: translateY(0);
+            transform: translateY(0);
   }
   50% {
     -webkit-transform: translateX(-60px);
-    transform: translateX(-60px);
+            transform: translateX(-60px);
   }
   100% {
     -webkit-transform: translateY(0);
-    transform: translateY(0);
+            transform: translateY(0);
   }
 }
 .intro .intro-flex .intro-text .intro-big-title {
@@ -229,7 +229,7 @@ body.popup-is-active .popup-big-box {
   height: 2px;
   background-color: black;
   -webkit-animation: underline-animation 1s forwards;
-  animation: underline-animation 1s forwards;
+          animation: underline-animation 1s forwards;
 }
 @-webkit-keyframes underline-animation {
   from {
@@ -266,21 +266,20 @@ body.popup-is-active .popup-big-box {
   background-color: black;
   border: 2px solid transparent;
   color: white;
-  -webkit-animation: button 0.3s ease, box-shadow 0.3s ease,
-    background-color 0.3s ease;
-  animation: button 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  -webkit-animation: button 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+          animation: button 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 .intro .intro-flex .intro-text .btn-start:hover {
   background-color: transparent;
   border: 2px solid black;
   color: black;
   -webkit-box-shadow: 0 5px 12px black;
-  box-shadow: 0 5px 12px black;
+          box-shadow: 0 5px 12px black;
 }
 .intro .intro-flex .intro-img {
   width: 50%;
   height: 430px;
-  background: url(assests/intro.webp);
+  background: url(/assests/intro.webp);
   background-position: center;
   background-size: cover;
 }
@@ -298,8 +297,8 @@ body.popup-is-active .popup-big-box {
   -ms-grid-columns: 1fr 1rem 1fr 1rem 1fr;
   grid-template-columns: repeat(3, 1fr);
   -webkit-column-gap: 1rem;
-  -moz-column-gap: 1rem;
-  column-gap: 1rem;
+     -moz-column-gap: 1rem;
+          column-gap: 1rem;
   row-gap: 4rem;
 }
 .serveice .serveice-card-parent .serveice-card {
@@ -322,7 +321,7 @@ body.popup-is-active .popup-big-box {
 }
 .serveice .serveice-card-parent .serveice-card:hover {
   -webkit-animation: hoverEffect 0.5s forwards;
-  animation: hoverEffect 0.5s forwards;
+          animation: hoverEffect 0.5s forwards;
   background-color: rgba(249, 246, 246, 0.6);
 }
 .serveice .serveice-card-parent .serveice-card:hover .card-title {
@@ -335,24 +334,24 @@ body.popup-is-active .popup-big-box {
   from {
     opacity: 0;
     -webkit-transform: scale(1);
-    transform: scale(1);
+            transform: scale(1);
   }
   to {
     opacity: 1;
     -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+            transform: scale(1.1);
   }
 }
 @keyframes hoverEffect {
   from {
     opacity: 0;
     -webkit-transform: scale(1);
-    transform: scale(1);
+            transform: scale(1);
   }
   to {
     opacity: 1;
     -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+            transform: scale(1.1);
   }
 }
 
@@ -366,7 +365,7 @@ body.popup-is-active .popup-big-box {
 .blog .interval .interval-title {
   font-size: 35px;
   -webkit-animation: spacing 2s linear;
-  animation: spacing 2s linear;
+          animation: spacing 2s linear;
 }
 @-webkit-keyframes spacing {
   0% {
@@ -401,8 +400,8 @@ body.popup-is-active .popup-big-box {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   gap: 20px;
 }
 .blog .blog-card-hoder .blog-card {
@@ -417,7 +416,7 @@ body.popup-is-active .popup-big-box {
 }
 .blog .blog-card-hoder .blog-card .blog-img-2 {
   height: 230px;
-  background: url(/assests/blog2.webp);
+  background: url(assests/blog2.webp);
   background-position: center;
   background-size: cover;
 }
@@ -448,7 +447,7 @@ body.popup-is-active .popup-big-box {
   height: 2px;
   background-color: black;
   -webkit-animation: underline-animation 1s forwards;
-  animation: underline-animation 1s forwards;
+          animation: underline-animation 1s forwards;
 }
 @keyframes underline-animation {
   from {
@@ -473,7 +472,7 @@ body.popup-is-active .popup-big-box {
   height: 2px;
   background-color: black;
   -webkit-animation: underline-animation 1s forwards;
-  animation: underline-animation 1s forwards;
+          animation: underline-animation 1s forwards;
 }
 @keyframes underline-animation {
   from {
@@ -494,23 +493,23 @@ body.popup-is-active .popup-big-box {
 }
 
 .slider-1 {
-  background-image: url(assests/contact.webp);
-}
-
-.slider-2 {
   background-image: url(assests/image2.avif);
 }
 
-.slider-3 {
+.slider-2 {
   background-image: url(assests/image3.webp);
 }
 
-.slider-4 {
+.slider-3 {
   background-image: url(assests/image4.avif);
 }
 
-.slider-5 {
+.slider-4 {
   background-image: url(assests/image5.avif);
+}
+
+.slider-5 {
+  background-image: url(assests/image6.avif);
 }
 
 .slider-6 {
@@ -544,8 +543,8 @@ body.popup-is-active .popup-big-box {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-size: 20px;
   text-transform: capitalize;
 }
@@ -568,7 +567,7 @@ body.popup-is-active .popup-big-box {
   border-top: 2px solid red;
   border-bottom: 2px solid red;
   padding: 60px;
-  background: url(/assests/bg.jpg) rgba(0, 0, 0, 0.8);
+  background: url(https://www.wework.com/ideas/wp-content/uploads/sites/4/2023/06/Web_72DPI-20210212_368_8th_Ave_11th_Fl_Nook-1-1120x630.jpg) rgba(0, 0, 0, 0.8);
   background-position: center;
   background-size: cover;
   background-blend-mode: multiply;
@@ -578,8 +577,8 @@ body.popup-is-active .popup-big-box {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .contact .flex .left {
   width: 20%;
@@ -623,8 +622,8 @@ footer .flex {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 footer .icons {
   display: -webkit-box;
@@ -672,8 +671,8 @@ footer .icons {
   .intro .intro-flex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 35px;
   }
   .intro .intro-flex .intro-text {
@@ -702,7 +701,7 @@ footer .icons {
     padding: 40px 0;
   }
   .serveice .serveice-card-parent {
-    -ms-grid-columns: (1fr) [2];
+    -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
     row-gap: 2rem;
   }
@@ -739,15 +738,14 @@ footer .icons {
     position: absolute;
     right: 60px;
   }
-
   .contact {
     padding: 30px;
   }
   .contact .flex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .contact .flex .left {
     display: none;
@@ -770,7 +768,6 @@ footer .icons {
     margin-bottom: 30px;
   }
 }
-
 @media only screen and (max-width: 768px) {
   .navbar {
     position: relative;
@@ -787,14 +784,14 @@ footer .icons {
   .navbar .header-flex .menu-holder .menu-items {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .navbar .header-flex .burger {
     display: block;
@@ -815,7 +812,7 @@ footer .icons {
   .serveice .serveice-card-parent {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr) [1];
+    -ms-grid-columns: (1fr)[1];
     grid-template-columns: repeat(1, 1fr);
     row-gap: 1rem;
   }
@@ -842,8 +839,8 @@ footer .icons {
   .blog .blog-card-hoder {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 20px;
   }
   .blog .blog-card-hoder .blog-card {
@@ -873,8 +870,8 @@ footer .icons {
   .blog .contact .flex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .blog .contact .flex .left {
     width: 100%;
